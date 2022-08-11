@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+ 
+<html>
+   <head>
+       <meta charset='utf-8'>
+       <title>Título</title>
+       <style>  
+            #container {
+                width: 500px;
+                height: 80px;
+                border-width: 2px;
+                border-color: rgb(0, 0, 0);
+                border-style: solid;
+                background-color: rgb(166, 185, 185);
+                padding: 10px;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .div1, .div2, .div3, .div4 {
+                width: 40px;
+                height: 40px;
+                border-width: 4px;
+                border-style: solid;
+                border-color: rgb(0, 85, 17);
+                background-color: rgb(211, 211, 211);
+            }
+
+            @media (max-width: 500px) {
+                .div1, .div2, .div3, .div4 {
+                width: 20px;
+                height: 20px;
+                border-width: 4px;
+                border-style: solid;
+                border-color: rgb(0, 85, 17);
+                background-color: rgb(211, 211, 211);
+            }
+            #container {
+                background-color: blue;
+            }
+
+            }
+
+            .div1 {
+                display: flex;
+                flex-grow: 1;
+            }
+       </style>
+   </head>
+ 
+   <body>
+        <div id='container'>
+            <div class='div1'><p>1</p></div>
+            <div class='div2'><p>2</p></div>
+            <div class='div3'><p>3</p></div>
+            <div class='div4'><p>4</p></div>
+        </div>
+   </body>
+</html>
